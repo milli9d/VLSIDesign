@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1569087956">
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="BG-DRC" Name="rotate_fpga.drc"/>
+  <File Type="BG-BGN" Name="rotate_fpga.bgn"/>
+  <File Type="BITSTR-SYSDEF" Name="rotate_fpga.sysdef"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="rotate_fpga.ltx"/>
+  <File Type="BITSTR-MMI" Name="rotate_fpga.mmi"/>
+  <File Type="BITSTR-BMM" Name="rotate_fpga_bd.bmm"/>
+  <File Type="BITSTR-NKY" Name="rotate_fpga.nky"/>
+  <File Type="BITSTR-RBT" Name="rotate_fpga.rbt"/>
+  <File Type="BITSTR-MSK" Name="rotate_fpga.msk"/>
+  <File Type="BG-BIN" Name="rotate_fpga.bin"/>
+  <File Type="BG-BIT" Name="rotate_fpga.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="rotate_fpga_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="rotate_fpga_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="rotate_fpga_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="rotate_fpga_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="rotate_fpga_postroute_physopt.dcp"/>
+  <File Type="ROUTE-CLK" Name="rotate_fpga_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-SIMILARITY" Name="rotate_fpga_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-TIMING-RPX" Name="rotate_fpga_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-TIMING-PB" Name="rotate_fpga_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="rotate_fpga_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="rotate_fpga_route_status.pb"/>
+  <File Type="ROUTE-STATUS" Name="rotate_fpga_route_status.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="rotate_fpga_power_routed.rpx"/>
+  <File Type="ROUTE-PWR-SUM" Name="rotate_fpga_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="rotate_fpga_power_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="rotate_fpga_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="rotate_fpga_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="rotate_fpga_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-RPX" Name="rotate_fpga_drc_routed.rpx"/>
+  <File Type="ROUTE-DRC-PB" Name="rotate_fpga_drc_routed.pb"/>
+  <File Type="ROUTE-DRC" Name="rotate_fpga_drc_routed.rpt"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="rotate_fpga_routed_bb.dcp"/>
+  <File Type="ROUTE-DCP" Name="rotate_fpga_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="rotate_fpga_routed_error.dcp"/>
+  <File Type="PHYSOPT-TIMING" Name="rotate_fpga_timing_summary_physopted.rpt"/>
+  <File Type="PHYSOPT-DRC" Name="rotate_fpga_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="rotate_fpga_physopt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="rotate_fpga_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="rotate_fpga_postplace_pwropt.dcp"/>
+  <File Type="PLACE-TIMING" Name="rotate_fpga_timing_summary_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="rotate_fpga_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="rotate_fpga_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-CTRL" Name="rotate_fpga_control_sets_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="rotate_fpga_utilization_placed.pb"/>
+  <File Type="PLACE-UTIL" Name="rotate_fpga_utilization_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="rotate_fpga_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-IO" Name="rotate_fpga_io_placed.rpt"/>
+  <File Type="RDI-RDI" Name="rotate_fpga.vdi"/>
+  <File Type="PWROPT-TIMING" Name="rotate_fpga_timing_summary_pwropted.rpt"/>
+  <File Type="PWROPT-DRC" Name="rotate_fpga_drc_pwropted.rpt"/>
+  <File Type="OPT-TIMING" Name="rotate_fpga_timing_summary_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="rotate_fpga.hwdef"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="rotate_fpga_methodology_drc_opted.rpt"/>
+  <File Type="OPT-DRC" Name="rotate_fpga_drc_opted.rpt"/>
+  <File Type="OPT-DCP" Name="rotate_fpga_opt.dcp"/>
+  <File Type="INIT-TIMING" Name="rotate_fpga_timing_summary_init.rpt"/>
+  <File Type="PWROPT-DCP" Name="rotate_fpga_pwropt.dcp"/>
+  <File Type="REPORTS-TCL" Name="rotate_fpga_reports.tcl"/>
+  <File Type="PLACE-DCP" Name="rotate_fpga_placed.dcp"/>
+  <File Type="PA-TCL" Name="rotate_fpga.tcl"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/uart_parity.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/uart_tx.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/uart_rx.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/uart.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/uart_wrapper2.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/rotate_fpga.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="rotate_fpga"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_2">
+    <File Path="$PSRCDIR/constrs_2/imports/new/basys3.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../aes_test/aes_test.srcs/constrs_1/new/basys3.xdc"/>
+        <Attr Name="ImportTime" Val="1568674316"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_2/imports/new/basys3.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

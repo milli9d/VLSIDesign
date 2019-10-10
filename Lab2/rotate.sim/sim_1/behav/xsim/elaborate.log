@@ -1,0 +1,26 @@
+Vivado Simulator 2017.3
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: /opt/Xilinx/Vivado/2017.3/bin/unwrapped/lnx64.o/xelab -wto 9b85424ce57b4cba8c1cf16e869098bf --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_aes_top_behav xil_defaultlib.tb_aes_top xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.numeric_std
+Compiling package ieee.math_real
+Compiling architecture full of entity xil_defaultlib.UART_TX [\UART_TX(1,4)\]
+Compiling architecture full of entity xil_defaultlib.UART_RX [\UART_RX(1,4)\]
+Compiling architecture full of entity xil_defaultlib.UART [\UART(clk_freq=100000000)(1,4)\]
+Compiling architecture behavioral of entity xil_defaultlib.uart_wrapper2 [\uart_wrapper2(1,4)\]
+Compiling module xil_defaultlib.leftrotate
+Compiling architecture behavioral of entity xil_defaultlib.rotate_fpga [rotate_fpga_default]
+Compiling architecture behavioral of entity xil_defaultlib.uart_wrapper2 [uart_wrapper2_default]
+Compiling module xil_defaultlib.tb_aes_top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_aes_top_behav
