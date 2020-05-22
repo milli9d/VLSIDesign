@@ -1,4 +1,0 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "/media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/rotate/rotate.srcs/sources_1/imports/new/leftrotate.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module leftrotate
-INFO: [VRFC 10-2263] Analyzing Verilog file "/media/deepraj/Work/workspace/Lecture/Hardwar_security/homework/rotate/rotate.srcs/sim_1/imports/new/tb_aes_top.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module tb_aes_top

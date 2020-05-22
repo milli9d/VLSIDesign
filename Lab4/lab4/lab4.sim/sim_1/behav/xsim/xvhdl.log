@@ -1,4 +1,0 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "/media/deepraj/Work/workspace/Lecture/TA/advance_hardware/ADHD/Lab4/lab4/lab4.srcs/sources_1/imports/new/uart_wrapper2.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity uart_wrapper2
-INFO: [VRFC 10-163] Analyzing VHDL file "/media/deepraj/Work/workspace/Lecture/TA/advance_hardware/ADHD/Lab4/lab4/lab4.srcs/sources_1/imports/new/rc5_top.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity rc5_top
