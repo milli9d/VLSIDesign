@@ -1,0 +1,253 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Mon Dec  2 23:44:51 2019
+| Host         : Mili9d running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file mips_top_control_sets_placed.rpt
+| Design       : mips_top
+| Device       : xc7a100t
+-------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |   175 |
+|    Minimum number of control sets                        |   175 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    53 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |   175 |
+| >= 0 to < 4        |     2 |
+| >= 4 to < 6        |     4 |
+| >= 6 to < 8        |     1 |
+| >= 8 to < 10       |     2 |
+| >= 10 to < 12      |     1 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |   165 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |            2072 |         1032 |
+| No           | No                    | Yes                    |               3 |            1 |
+| No           | Yes                   | No                     |              66 |           24 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |            1031 |          812 |
+| Yes          | Yes                   | No                     |              71 |           19 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-----------------------------------------------+-------------------------------------------+-------------------------------------------------+------------------+----------------+
+|                  Clock Signal                 |               Enable Signal               |                 Set/Reset Signal                | Slice Load Count | Bel Load Count |
++-----------------------------------------------+-------------------------------------------+-------------------------------------------------+------------------+----------------+
+|  CLK50M_IBUF_BUFG                             |                                           |                                                 |                2 |              3 |
+|  CLK50M_IBUF_BUFG                             |                                           | BTNC_deb/p_0_in                                 |                1 |              3 |
+|  seven_seg/slowCLK                            |                                           | seven_seg/clear                                 |                1 |              4 |
+|  CLK50M_IBUF_BUFG                             | uart_wrapper/uart/uart_clk_en__0          | uart_wrapper/uart/uart_rx_i/rx_ticks[3]_i_1_n_0 |                1 |              4 |
+|  CLK50M_IBUF_BUFG                             | uart_wrapper/uart/uart_clk_en__0          | uart_wrapper/uart/uart_tx_i/tx_ticks[3]_i_1_n_0 |                1 |              4 |
+|  add_UART_reg[4]_i_1_n_0                      |                                           |                                                 |                2 |              5 |
+|  CLK50M_IBUF_BUFG                             | imem_block/pc_curr_reg[7]_5[0]            | SW_IBUF[6]                                      |                2 |              7 |
+|  CLK50M_IBUF_BUFG                             | uart_wrapper/uart/uart_tx_i/tx_data0      | BTNC_deb/BTNC_sig                               |                2 |              8 |
+|  CLK50M_IBUF_BUFG                             | uart_wrapper/uart/uart_rx_i/O_RX_VLD2     | BTNC_deb/BTNC_sig                               |                3 |              9 |
+|  CLK50M_IBUF_BUFG                             | uart_wrapper/uart/uart_rx_i/rx_bit_count0 | BTNC_deb/BTNC_sig                               |                3 |             11 |
+|  imem_block/dmem_reg[60][15]_i_2_12[0]        |                                           |                                                 |                6 |             16 |
+|  imem_block/dmem_reg[60][15]_i_2_10[0]        |                                           |                                                 |                5 |             16 |
+|  imem_block/dmem_reg[117][15]_i_2_1[0]        |                                           |                                                 |                6 |             16 |
+|  imem_block/dmem_reg[119][15]_i_4_1[0]        |                                           |                                                 |                8 |             16 |
+|  imem_block/dmem_reg[122][15]_i_2_1[0]        |                                           |                                                 |                8 |             16 |
+|  imem_block/dmem_reg[60][15]_i_2_14[0]        |                                           |                                                 |                8 |             16 |
+|  imem_block/d_read_reg[15]_i_5_3[0]           |                                           |                                                 |                8 |             16 |
+|  imem_block/dmem_reg[127][15]_i_9_0[0]        |                                           |                                                 |                8 |             16 |
+|  imem_block/dmem_reg[14][15]_i_2_0[0]         |                                           |                                                 |                6 |             16 |
+|  imem_block/d_read_reg[15]_i_5_1[0]           |                                           |                                                 |                8 |             16 |
+|  imem_block/d_read_reg[15]_i_5_4[0]           |                                           |                                                 |               10 |             16 |
+|  imem_block/d_read_reg[15]_i_5_0[0]           |                                           |                                                 |               15 |             16 |
+|  imem_block/d_read_reg[15]_i_5_8[0]           |                                           |                                                 |                7 |             16 |
+|  imem_block/dmem_reg[119][15]_i_4_0[0]        |                                           |                                                 |                6 |             16 |
+|  imem_block/dmem_reg[124][15]_i_2_4[0]        |                                           |                                                 |                9 |             16 |
+|  imem_block/dmem_reg[14][15]_i_2_4[0]         |                                           |                                                 |                5 |             16 |
+|  imem_block/dmem_reg[123][15]_i_2_1[0]        |                                           |                                                 |                7 |             16 |
+|  imem_block/dmem_reg[111][15]_i_2_1[0]        |                                           |                                                 |                7 |             16 |
+|  imem_block/dmem_reg[60][15]_i_2_0[0]         |                                           |                                                 |                4 |             16 |
+|  imem_block/dmem_reg[122][15]_i_2_0[0]        |                                           |                                                 |               13 |             16 |
+|  imem_block/dmem_reg[122][15]_i_2_3[0]        |                                           |                                                 |               10 |             16 |
+|  imem_block/dmem_reg[119][15]_i_4_2[0]        |                                           |                                                 |                6 |             16 |
+|  imem_block/d_read_reg[15]_i_5_6[0]           |                                           |                                                 |               11 |             16 |
+|  imem_block/dmem_reg[124][15]_i_2_2[0]        |                                           |                                                 |                5 |             16 |
+|  imem_block/dmem_reg[14][15]_i_2_1[0]         |                                           |                                                 |               10 |             16 |
+|  imem_block/dmem_reg[14][15]_i_2_2[0]         |                                           |                                                 |               12 |             16 |
+|  imem_block/dmem_reg[127][15]_i_9_2[0]        |                                           |                                                 |                7 |             16 |
+|  imem_block/d_read_reg[15]_i_5_5[0]           |                                           |                                                 |                5 |             16 |
+|  imem_block/dmem_reg[4][15]_i_2_0[0]          |                                           |                                                 |                6 |             16 |
+|  imem_block/dmem_reg[60][15]_i_2_11[0]        |                                           |                                                 |                9 |             16 |
+|  imem_block/dmem_reg[60][15]_i_2_13[0]        |                                           |                                                 |                5 |             16 |
+|  imem_block/d_read_reg[15]_i_6_0[0]           |                                           |                                                 |                6 |             16 |
+|  imem_block/dmem_reg[117][15]_i_2_2[0]        |                                           |                                                 |                5 |             16 |
+|  imem_block/dmem_reg[123][15]_i_2_2[0]        |                                           |                                                 |               11 |             16 |
+|  imem_block/dmem_reg[125][15]_i_3_1[0]        |                                           |                                                 |                5 |             16 |
+|  imem_block/dmem_reg[124][15]_i_2_0[0]        |                                           |                                                 |                6 |             16 |
+|  imem_block/dmem_reg[127][15]_i_9_3[0]        |                                           |                                                 |                9 |             16 |
+|  imem_block/dmem_reg[127][15]_i_9_4[0]        |                                           |                                                 |                7 |             16 |
+|  imem_block/dmem_reg[124][15]_i_2_3[0]        |                                           |                                                 |                9 |             16 |
+|  imem_block/dmem_reg[14][15]_i_2_3[0]         |                                           |                                                 |                6 |             16 |
+|  imem_block/d_read_reg[15]_i_5_7[0]           |                                           |                                                 |                6 |             16 |
+|  imem_block/dmem_reg[117][15]_i_2_0[0]        |                                           |                                                 |                8 |             16 |
+|  imem_block/dmem_reg[121][15]_i_2_0[0]        |                                           |                                                 |                8 |             16 |
+|  imem_block/d_read_reg[15]_i_5_2[0]           |                                           |                                                 |                7 |             16 |
+|  imem_block/dmem_reg[123][15]_i_2_0[0]        |                                           |                                                 |                5 |             16 |
+|  imem_block/dmem_reg[123][15]_i_2_4[0]        |                                           |                                                 |                8 |             16 |
+|  imem_block/dmem_reg[111][15]_i_2_0[0]        |                                           |                                                 |                8 |             16 |
+|  imem_block/dmem_reg[124][15]_i_2_1[0]        |                                           |                                                 |                7 |             16 |
+|  imem_block/dmem_reg[123][15]_i_2_3[0]        |                                           |                                                 |                8 |             16 |
+|  imem_block/dmem_reg[125][15]_i_3_0[0]        |                                           |                                                 |                7 |             16 |
+|  imem_block/dmem_reg[80][15]_i_2_0[0]         |                                           |                                                 |               11 |             16 |
+|  imem_block/dmem_reg[94][15]_i_2_7[0]         |                                           |                                                 |               10 |             16 |
+|  imem_block/dmem_reg[94][15]_i_2_8[0]         |                                           |                                                 |               10 |             16 |
+|  imem_block/dmem_reg[94][15]_i_2_9[0]         |                                           |                                                 |                6 |             16 |
+|  imem_block/dmem_reg[60][15]_i_2_22[0]        |                                           |                                                 |                4 |             16 |
+|  imem_block/dmem_reg[95][15]_i_3_1[0]         |                                           |                                                 |               13 |             16 |
+|  imem_block/dmem_reg[96][15]_i_5_0[0]         |                                           |                                                 |                7 |             16 |
+|  imem_block/dmem_reg[60][15]_i_2_19[0]        |                                           |                                                 |                9 |             16 |
+|  imem_block/dmem_reg[94][15]_i_2_12[0]        |                                           |                                                 |               12 |             16 |
+|  imem_block/dmem_reg[94][15]_i_2_3[0]         |                                           |                                                 |                7 |             16 |
+|  imem_block/dmem_reg[96][15]_i_5_12[0]        |                                           |                                                 |                6 |             16 |
+|  imem_block/dmem_reg[96][15]_i_5_14[0]        |                                           |                                                 |                7 |             16 |
+|  imem_block/dmem_reg[96][15]_i_5_15[0]        |                                           |                                                 |               10 |             16 |
+|  imem_block/dmem_reg[94][15]_i_2_11[0]        |                                           |                                                 |                8 |             16 |
+|  imem_block/dmem_reg[72][15]_i_4_0[0]         |                                           |                                                 |                6 |             16 |
+|  imem_block/dmem_reg[71][15]_i_3_0[0]         |                                           |                                                 |                5 |             16 |
+|  imem_block/dmem_reg[63][15]_i_4_0[0]         |                                           |                                                 |                9 |             16 |
+|  imem_block/dmem_reg[64][15]_i_2_0[0]         |                                           |                                                 |                5 |             16 |
+|  imem_block/dmem_reg[94][15]_i_2_6[0]         |                                           |                                                 |               10 |             16 |
+|  imem_block/dmem_reg[96][15]_i_5_17[0]        |                                           |                                                 |               14 |             16 |
+|  imem_block/dmem_reg[60][15]_i_2_20[0]        |                                           |                                                 |                7 |             16 |
+|  imem_block/dmem_reg[96][15]_i_5_13[0]        |                                           |                                                 |               10 |             16 |
+|  imem_block/dmem_reg[96][15]_i_5_10[0]        |                                           |                                                 |                6 |             16 |
+|  imem_block/dmem_reg[96][15]_i_5_2[0]         |                                           |                                                 |                8 |             16 |
+|  imem_block/dmem_reg[96][15]_i_5_3[0]         |                                           |                                                 |               12 |             16 |
+|  imem_block/dmem_reg[60][15]_i_2_4[0]         |                                           |                                                 |                6 |             16 |
+|  imem_block/dmem_reg[96][15]_i_5_4[0]         |                                           |                                                 |               12 |             16 |
+|  imem_block/dmem_reg[96][15]_i_5_5[0]         |                                           |                                                 |                7 |             16 |
+|  imem_block/dmem_reg[96][15]_i_5_6[0]         |                                           |                                                 |                6 |             16 |
+|  imem_block/dmem_reg[60][15]_i_2_21[0]        |                                           |                                                 |               10 |             16 |
+|  imem_block/dmem_reg[6][15]_i_2_2[0]          |                                           |                                                 |                7 |             16 |
+|  imem_block/dmem_reg[60][15]_i_2_7[0]         |                                           |                                                 |                5 |             16 |
+|  imem_block/dmem_reg[60][15]_i_2_3[0]         |                                           |                                                 |                5 |             16 |
+|  imem_block/dmem_reg[60][15]_i_2_8[0]         |                                           |                                                 |                5 |             16 |
+|  imem_block/dmem_reg[94][15]_i_2_10[0]        |                                           |                                                 |               10 |             16 |
+|  imem_block/dmem_reg[94][15]_i_2_2[0]         |                                           |                                                 |                8 |             16 |
+|  imem_block/dmem_reg[94][15]_i_2_5[0]         |                                           |                                                 |               10 |             16 |
+|  imem_block/dmem_reg[95][15]_i_3_0[0]         |                                           |                                                 |                9 |             16 |
+|  imem_block/dmem_reg[66][15]_i_2_0[0]         |                                           |                                                 |                6 |             16 |
+|  imem_block/dmem_reg[96][15]_i_5_11[0]        |                                           |                                                 |               12 |             16 |
+|  imem_block/dmem_reg[96][15]_i_5_18[0]        |                                           |                                                 |               10 |             16 |
+|  imem_block/dmem_reg[96][15]_i_5_16[0]        |                                           |                                                 |                7 |             16 |
+|  imem_block/dmem_reg[96][15]_i_5_1[0]         |                                           |                                                 |                5 |             16 |
+|  imem_block/dmem_reg[96][15]_i_5_19[0]        |                                           |                                                 |                9 |             16 |
+|  imem_block/dmem_reg[60][15]_i_2_23[0]        |                                           |                                                 |               11 |             16 |
+|  imem_block/dmem_reg[60][15]_i_2_5[0]         |                                           |                                                 |                5 |             16 |
+|  imem_block/dmem_reg[60][15]_i_2_6[0]         |                                           |                                                 |                6 |             16 |
+|  imem_block/dmem_reg[60][15]_i_2_15[0]        |                                           |                                                 |                8 |             16 |
+|  imem_block/dmem_reg[60][15]_i_2_18[0]        |                                           |                                                 |                8 |             16 |
+|  imem_block/dmem_reg[60][15]_i_2_2[0]         |                                           |                                                 |                6 |             16 |
+|  imem_block/dmem_reg[63][15]_i_2_0[0]         |                                           |                                                 |                5 |             16 |
+|  imem_block/dmem_reg[6][15]_i_2_0[0]          |                                           |                                                 |                6 |             16 |
+|  imem_block/dmem_reg[78][15]_i_4_0[0]         |                                           |                                                 |               12 |             16 |
+|  imem_block/dmem_reg[60][15]_i_2_16[0]        |                                           |                                                 |                8 |             16 |
+|  imem_block/dmem_reg[60][15]_i_2_17[0]        |                                           |                                                 |               11 |             16 |
+|  imem_block/dmem_reg[64][15]_i_3_0[0]         |                                           |                                                 |                7 |             16 |
+|  imem_block/dmem_reg[6][15]_i_2_1[0]          |                                           |                                                 |                6 |             16 |
+|  imem_block/dmem_reg[69][15]_i_3_0[0]         |                                           |                                                 |                7 |             16 |
+|  imem_block/dmem_reg[72][15]_i_4_1[0]         |                                           |                                                 |                7 |             16 |
+|  imem_block/dmem_reg[80][15]_i_3_0[0]         |                                           |                                                 |               12 |             16 |
+|  imem_block/dmem_reg[94][15]_i_2_0[0]         |                                           |                                                 |               11 |             16 |
+|  imem_block/dmem_reg[94][15]_i_2_1[0]         |                                           |                                                 |               10 |             16 |
+|  imem_block/dmem_reg[60][15]_i_2_9[0]         |                                           |                                                 |                7 |             16 |
+|  imem_block/dmem_reg[94][15]_i_2_4[0]         |                                           |                                                 |                7 |             16 |
+|  imem_block/dmem_reg[96][15]_i_5_7[0]         |                                           |                                                 |                6 |             16 |
+|  imem_block/dmem_reg[96][15]_i_5_8[0]         |                                           |                                                 |                7 |             16 |
+|  imem_block/dmem_reg[96][15]_i_5_9[0]         |                                           |                                                 |                6 |             16 |
+|  imem_block/reg_arr_signal_reg[0][1]_i_2_0[0] |                                           |                                                 |                6 |             16 |
+|  imem_block/reg_arr_signal_reg[0][2]_i_2_0[0] |                                           |                                                 |                5 |             16 |
+|  imem_block/E[0]                              |                                           |                                                 |               16 |             16 |
+|  imem_block/dmem_reg[124][15]_i_2_5[0]        |                                           |                                                 |                7 |             16 |
+|  imem_block/dmem_reg[121][15]_i_2_1[0]        |                                           |                                                 |                8 |             16 |
+|  imem_block/dmem_reg[126][15]_i_6_0[0]        |                                           |                                                 |               12 |             16 |
+|  imem_block/dmem_reg[127][15]_i_9_1[0]        |                                           |                                                 |                8 |             16 |
+|  imem_block/dmem_reg[127][15]_i_12_0[0]       |                                           |                                                 |               12 |             16 |
+|  imem_block/dmem_reg[14][15]_i_2_5[0]         |                                           |                                                 |                9 |             16 |
+|  imem_block/dmem_reg[16][15]_i_2_0[0]         |                                           |                                                 |               10 |             16 |
+|  imem_block/dmem_reg[60][15]_i_2_1[0]         |                                           |                                                 |               12 |             16 |
+|  imem_block/dmem_reg[122][15]_i_2_2[0]        |                                           |                                                 |                7 |             16 |
+|  CLK50M_IBUF_BUFG                             | delay_counter[15]_i_1_n_0                 | BTNC_deb/BTNC_sig                               |                4 |             16 |
+|  CLK50M_IBUF_BUFG                             | BTNC_deb/count0                           | BTNC_deb/count[0]_i_1_n_0                       |                5 |             19 |
+|  CLK50M_IBUF_BUFG                             |                                           | seven_seg/i_cnt[0]_i_1_n_0                      |                5 |             20 |
+|  CLK50M_IBUF_BUFG                             | imem_block/reg_arr_signal[0][31]_i_6_3[0] | SW_IBUF[6]                                      |               28 |             32 |
+|  CLK50M_IBUF_BUFG                             | imem_block/reg_arr_signal[0][31]_i_5_0[0] | SW_IBUF[6]                                      |               26 |             32 |
+|  CLK50M_IBUF_BUFG                             | imem_block/reg_arr_signal[0][31]_i_8_3[0] | SW_IBUF[6]                                      |               28 |             32 |
+|  CLK50M_IBUF_BUFG                             | imem_block/reg_arr_signal[0][31]_i_4_6[0] | SW_IBUF[6]                                      |               22 |             32 |
+|  CLK50M_IBUF_BUFG                             | imem_block/reg_arr_signal[0][31]_i_6_0[0] | SW_IBUF[6]                                      |               26 |             32 |
+|  CLK50M_IBUF_BUFG                             | imem_block/reg_arr_signal[0][31]_i_6_6[0] | SW_IBUF[6]                                      |               26 |             32 |
+|  CLK50M_IBUF_BUFG                             | imem_block/reg_arr_signal[0][31]_i_4_3[0] | SW_IBUF[6]                                      |               26 |             32 |
+|  CLK50M_IBUF_BUFG                             | imem_block/reg_arr_signal[0][31]_i_5_2[0] | SW_IBUF[6]                                      |               27 |             32 |
+|  CLK50M_IBUF_BUFG                             | imem_block/reg_arr_signal[0][31]_i_7_3[0] | SW_IBUF[6]                                      |               23 |             32 |
+|  CLK50M_IBUF_BUFG                             | imem_block/reg_arr_signal[0][31]_i_4_2[0] | SW_IBUF[6]                                      |               29 |             32 |
+|  CLK50M_IBUF_BUFG                             | imem_block/reg_arr_signal[0][31]_i_5_1[0] | SW_IBUF[6]                                      |               20 |             32 |
+|  CLK50M_IBUF_BUFG                             | imem_block/reg_arr_signal[0][31]_i_4_4[0] | SW_IBUF[6]                                      |               23 |             32 |
+|  CLK50M_IBUF_BUFG                             | imem_block/reg_arr_signal[0][31]_i_4_5[0] | SW_IBUF[6]                                      |               24 |             32 |
+|  CLK50M_IBUF_BUFG                             | imem_block/reg_arr_signal[0][31]_i_6_4[0] | SW_IBUF[6]                                      |               26 |             32 |
+|  CLK50M_IBUF_BUFG                             | imem_block/reg_arr_signal[0][31]_i_7_0[0] | SW_IBUF[6]                                      |               26 |             32 |
+|  CLK50M_IBUF_BUFG                             | imem_block/reg_arr_signal[0][31]_i_7_2[0] | SW_IBUF[6]                                      |               24 |             32 |
+|  CLK50M_IBUF_BUFG                             | imem_block/reg_arr_signal[0][31]_i_4_1[0] | SW_IBUF[6]                                      |               25 |             32 |
+|  CLK50M_IBUF_BUFG                             | imem_block/reg_arr_signal[0][31]_i_7_1[0] | SW_IBUF[6]                                      |               29 |             32 |
+|  CLK50M_IBUF_BUFG                             | imem_block/reg_arr_signal[0][31]_i_7_5[0] | SW_IBUF[6]                                      |               25 |             32 |
+|  CLK50M_IBUF_BUFG                             | imem_block/reg_arr_signal[0][31]_i_8_6[0] | SW_IBUF[6]                                      |               22 |             32 |
+|  CLK50M_IBUF_BUFG                             | imem_block/reg_arr_signal[0][31]_i_6_5[0] | SW_IBUF[6]                                      |               25 |             32 |
+|  CLK50M_IBUF_BUFG                             | imem_block/reg_arr_signal[0][31]_i_8_4[0] | SW_IBUF[6]                                      |               25 |             32 |
+|  CLK50M_IBUF_BUFG                             | imem_block/reg_arr_signal[0][31]_i_8_7[0] | SW_IBUF[6]                                      |               24 |             32 |
+|  CLK50M_IBUF_BUFG                             | imem_block/reg_arr_signal[0][31]_i_6_2[0] | SW_IBUF[6]                                      |               26 |             32 |
+|  CLK50M_IBUF_BUFG                             | imem_block/reg_arr_signal[0][31]_i_8_2[0] | SW_IBUF[6]                                      |               23 |             32 |
+|  CLK50M_IBUF_BUFG                             | imem_block/reg_arr_signal[0][31]_i_8_5[0] | SW_IBUF[6]                                      |               26 |             32 |
+|  CLK50M_IBUF_BUFG                             | imem_block/reg_arr_signal[0][31]_i_6_1[0] | SW_IBUF[6]                                      |               29 |             32 |
+|  CLK50M_IBUF_BUFG                             | imem_block/reg_arr_signal[0][31]_i_4_0[0] | SW_IBUF[6]                                      |               23 |             32 |
+|  CLK50M_IBUF_BUFG                             | imem_block/reg_arr_signal[0][31]_i_7_4[0] | SW_IBUF[6]                                      |               25 |             32 |
+|  CLK50M_IBUF_BUFG                             | imem_block/reg_arr_signal[0][31]_i_7_6[0] | SW_IBUF[6]                                      |               25 |             32 |
+|  CLK50M_IBUF_BUFG                             | imem_block/reg_arr_signal[0][31]_i_8_1[0] | SW_IBUF[6]                                      |               26 |             32 |
+|  CLK50M_IBUF_BUFG                             | imem_block/reg_arr_signal[0][31]_i_8_0[0] | SW_IBUF[6]                                      |               28 |             32 |
+|  CLK50M_IBUF_BUFG                             |                                           | BTNC_deb/BTNC_sig                               |               18 |             42 |
++-----------------------------------------------+-------------------------------------------+-------------------------------------------------+------------------+----------------+
+
+

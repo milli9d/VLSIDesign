@@ -1,0 +1,12 @@
+Breakpoint File Version 1.0
+151 true C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/mips_top.vhd
+153 true C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/mips_top.vhd
+424 true C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/mips_top.vhd
+423 true C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/mips_top.vhd
+425 true C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/mips_top.vhd
+426 true C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/mips_top.vhd
+427 true C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/mips_top.vhd
+428 true C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/mips_top.vhd
+430 true C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/mips_top.vhd
+150 true C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/mips_top.vhd
+152 true C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/mips_top.vhd

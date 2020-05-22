@@ -1,0 +1,839 @@
+
+*** Running vivado
+    with args -log mips_top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source mips_top.tcl
+
+
+****** Vivado v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source mips_top.tcl -notrace
+Command: synth_design -top mips_top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 26524 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 987.422 ; gain = 235.063
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'mips_top' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/mips_top.vhd:49]
+INFO: [Synth 8-3491] module 'imem' declared at 'C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/imem.vhd:36' bound to instance 'imem_block' of component 'imem' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/mips_top.vhd:158]
+INFO: [Synth 8-638] synthesizing module 'imem' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/imem.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'imem' (1#1) [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/imem.vhd:43]
+INFO: [Synth 8-3491] module 'control_unit' declared at 'C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/control_unit.vhd:50' bound to instance 'control_unit_block' of component 'control_unit' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/mips_top.vhd:163]
+INFO: [Synth 8-638] synthesizing module 'control_unit' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/control_unit.vhd:66]
+INFO: [Synth 8-256] done synthesizing module 'control_unit' (2#1) [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/control_unit.vhd:66]
+INFO: [Synth 8-3491] module 'register_file' declared at 'C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/register_file.vhd:36' bound to instance 'rf_block' of component 'register_file' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/mips_top.vhd:184]
+INFO: [Synth 8-638] synthesizing module 'register_file' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/register_file.vhd:50]
+INFO: [Synth 8-256] done synthesizing module 'register_file' (3#1) [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/register_file.vhd:50]
+INFO: [Synth 8-3491] module 'alu' declared at 'C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/alu.vhd:35' bound to instance 'alu_block' of component 'alu' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/mips_top.vhd:209]
+INFO: [Synth 8-638] synthesizing module 'alu' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/alu.vhd:44]
+INFO: [Synth 8-226] default block is never used [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/alu.vhd:100]
+INFO: [Synth 8-256] done synthesizing module 'alu' (4#1) [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/alu.vhd:44]
+INFO: [Synth 8-3491] module 'dmem' declared at 'C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/dmem.vhd:36' bound to instance 'dmem_block' of component 'dmem' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/mips_top.vhd:220]
+INFO: [Synth 8-638] synthesizing module 'dmem' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/dmem.vhd:46]
+WARNING: [Synth 8-614] signal 'dmem' is read in the process but is not in the sensitivity list [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/dmem.vhd:109]
+INFO: [Synth 8-256] done synthesizing module 'dmem' (5#1) [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/dmem.vhd:46]
+INFO: [Synth 8-3491] module 'debounce' declared at 'C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/imports/Downloads/debounce.vhd:29' bound to instance 'BTNR_deb' of component 'debounce' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/mips_top.vhd:239]
+INFO: [Synth 8-638] synthesizing module 'debounce' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/imports/Downloads/debounce.vhd:40]
+	Parameter clk_freq bound to: 50000000 - type: integer 
+	Parameter stable_time bound to: 10 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'debounce' (6#1) [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/imports/Downloads/debounce.vhd:40]
+INFO: [Synth 8-3491] module 'debounce' declared at 'C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/imports/Downloads/debounce.vhd:29' bound to instance 'BTNC_deb' of component 'debounce' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/mips_top.vhd:245]
+INFO: [Synth 8-3491] module 'uart_wrapper2' declared at 'C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/imports/new/uart_wrapper2.vhd:36' bound to instance 'uart_wrapper' of component 'uart_wrapper2' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/mips_top.vhd:255]
+INFO: [Synth 8-638] synthesizing module 'uart_wrapper2' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/imports/new/uart_wrapper2.vhd:59]
+	Parameter CLK_FREQ bound to: 100000000 - type: integer 
+	Parameter BAUD_RATE bound to: 115200 - type: integer 
+	Parameter PARITY_BIT bound to: none - type: string 
+	Parameter NO_BYTE_SEND bound to: 1 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/imports/new/uart_wrapper2.vhd:52]
+INFO: [Synth 8-5534] Detected attribute (* mark_debug = "true" *) [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/imports/new/uart_wrapper2.vhd:55]
+INFO: [Synth 8-226] default block is never used [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/imports/new/uart_wrapper2.vhd:124]
+INFO: [Synth 8-638] synthesizing module 'UART' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/imports/new/uart.vhd:42]
+	Parameter CLK_FREQ bound to: 100000000 - type: integer 
+	Parameter BAUD_RATE bound to: 115200 - type: integer 
+	Parameter PARITY_BIT bound to: none - type: string 
+	Parameter USE_DEBOUNCER bound to: 1 - type: bool 
+INFO: [Synth 8-638] synthesizing module 'UART_TX' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/imports/new/uart_tx.vhd:31]
+	Parameter PARITY_BIT bound to: none - type: string 
+INFO: [Synth 8-256] done synthesizing module 'UART_TX' (7#1) [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/imports/new/uart_tx.vhd:31]
+INFO: [Synth 8-638] synthesizing module 'UART_RX' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/imports/new/uart_rx.vhd:31]
+	Parameter PARITY_BIT bound to: none - type: string 
+INFO: [Synth 8-256] done synthesizing module 'UART_RX' (8#1) [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/imports/new/uart_rx.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'UART' (9#1) [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/imports/new/uart.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'uart_wrapper2' (10#1) [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/imports/new/uart_wrapper2.vhd:59]
+INFO: [Synth 8-226] default block is never used [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/mips_top.vhd:273]
+INFO: [Synth 8-226] default block is never used [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/mips_top.vhd:353]
+INFO: [Synth 8-3491] module 'SevenSeg_Top' declared at 'C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/imports/Downloads/SevenSeg_Top .vhd:5' bound to instance 'seven_seg' of component 'SevenSeg_Top' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/mips_top.vhd:363]
+INFO: [Synth 8-638] synthesizing module 'SevenSeg_Top' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/imports/Downloads/SevenSeg_Top .vhd:14]
+INFO: [Synth 8-3491] module 'Hex2LED' declared at 'C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/imports/Downloads/Hex2SevenSegConverter .vhd:6' bound to instance 'CONV1' of component 'Hex2LED' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/imports/Downloads/SevenSeg_Top .vhd:83]
+INFO: [Synth 8-638] synthesizing module 'Hex2LED' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/imports/Downloads/Hex2SevenSegConverter .vhd:11]
+WARNING: [Synth 8-614] signal 'X' is read in the process but is not in the sensitivity list [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/imports/Downloads/Hex2SevenSegConverter .vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'Hex2LED' (11#1) [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/imports/Downloads/Hex2SevenSegConverter .vhd:11]
+INFO: [Synth 8-3491] module 'Hex2LED' declared at 'C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/imports/Downloads/Hex2SevenSegConverter .vhd:6' bound to instance 'CONV2' of component 'Hex2LED' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/imports/Downloads/SevenSeg_Top .vhd:84]
+INFO: [Synth 8-3491] module 'Hex2LED' declared at 'C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/imports/Downloads/Hex2SevenSegConverter .vhd:6' bound to instance 'CONV3' of component 'Hex2LED' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/imports/Downloads/SevenSeg_Top .vhd:85]
+INFO: [Synth 8-3491] module 'Hex2LED' declared at 'C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/imports/Downloads/Hex2SevenSegConverter .vhd:6' bound to instance 'CONV4' of component 'Hex2LED' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/imports/Downloads/SevenSeg_Top .vhd:86]
+INFO: [Synth 8-3491] module 'Hex2LED' declared at 'C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/imports/Downloads/Hex2SevenSegConverter .vhd:6' bound to instance 'CONV5' of component 'Hex2LED' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/imports/Downloads/SevenSeg_Top .vhd:87]
+INFO: [Synth 8-3491] module 'Hex2LED' declared at 'C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/imports/Downloads/Hex2SevenSegConverter .vhd:6' bound to instance 'CONV6' of component 'Hex2LED' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/imports/Downloads/SevenSeg_Top .vhd:88]
+INFO: [Synth 8-3491] module 'Hex2LED' declared at 'C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/imports/Downloads/Hex2SevenSegConverter .vhd:6' bound to instance 'CONV7' of component 'Hex2LED' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/imports/Downloads/SevenSeg_Top .vhd:89]
+INFO: [Synth 8-3491] module 'Hex2LED' declared at 'C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/imports/Downloads/Hex2SevenSegConverter .vhd:6' bound to instance 'CONV8' of component 'Hex2LED' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/imports/Downloads/SevenSeg_Top .vhd:90]
+INFO: [Synth 8-256] done synthesizing module 'SevenSeg_Top' (12#1) [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/imports/Downloads/SevenSeg_Top .vhd:14]
+INFO: [Synth 8-226] default block is never used [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/mips_top.vhd:372]
+WARNING: [Synth 8-614] signal 'pc_curr' is read in the process but is not in the sensitivity list [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/mips_top.vhd:421]
+WARNING: [Synth 8-614] signal 'zero' is read in the process but is not in the sensitivity list [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/mips_top.vhd:421]
+WARNING: [Synth 8-6014] Unused sequential element add_SS_out_reg was removed.  [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/mips_top.vhd:409]
+INFO: [Synth 8-256] done synthesizing module 'mips_top' (13#1) [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/mips_top.vhd:49]
+WARNING: [Synth 8-3331] design Hex2LED has unconnected port CLK
+WARNING: [Synth 8-3331] design dmem has unconnected port clk
+WARNING: [Synth 8-3331] design dmem has unconnected port rst
+WARNING: [Synth 8-3331] design imem has unconnected port pc[31]
+WARNING: [Synth 8-3331] design imem has unconnected port pc[30]
+WARNING: [Synth 8-3331] design imem has unconnected port pc[29]
+WARNING: [Synth 8-3331] design imem has unconnected port pc[28]
+WARNING: [Synth 8-3331] design imem has unconnected port pc[27]
+WARNING: [Synth 8-3331] design imem has unconnected port pc[26]
+WARNING: [Synth 8-3331] design imem has unconnected port pc[25]
+WARNING: [Synth 8-3331] design imem has unconnected port pc[24]
+WARNING: [Synth 8-3331] design imem has unconnected port pc[23]
+WARNING: [Synth 8-3331] design imem has unconnected port pc[22]
+WARNING: [Synth 8-3331] design imem has unconnected port pc[21]
+WARNING: [Synth 8-3331] design imem has unconnected port pc[20]
+WARNING: [Synth 8-3331] design imem has unconnected port pc[19]
+WARNING: [Synth 8-3331] design imem has unconnected port pc[18]
+WARNING: [Synth 8-3331] design imem has unconnected port pc[17]
+WARNING: [Synth 8-3331] design imem has unconnected port pc[16]
+WARNING: [Synth 8-3331] design imem has unconnected port pc[15]
+WARNING: [Synth 8-3331] design imem has unconnected port pc[14]
+WARNING: [Synth 8-3331] design imem has unconnected port pc[13]
+WARNING: [Synth 8-3331] design imem has unconnected port pc[12]
+WARNING: [Synth 8-3331] design imem has unconnected port pc[11]
+WARNING: [Synth 8-3331] design imem has unconnected port pc[10]
+WARNING: [Synth 8-3331] design imem has unconnected port pc[9]
+WARNING: [Synth 8-3331] design imem has unconnected port pc[8]
+WARNING: [Synth 8-3331] design mips_top has unconnected port BTNU
+WARNING: [Synth 8-3331] design mips_top has unconnected port SW[10]
+WARNING: [Synth 8-3331] design mips_top has unconnected port SW[9]
+WARNING: [Synth 8-3331] design mips_top has unconnected port SW[8]
+WARNING: [Synth 8-3331] design mips_top has unconnected port SW[7]
+WARNING: [Synth 8-3331] design mips_top has unconnected port SW[5]
+WARNING: [Synth 8-3331] design mips_top has unconnected port SW[4]
+WARNING: [Synth 8-3331] design mips_top has unconnected port SW[3]
+WARNING: [Synth 8-3331] design mips_top has unconnected port SW[2]
+WARNING: [Synth 8-3331] design mips_top has unconnected port SW[1]
+WARNING: [Synth 8-3331] design mips_top has unconnected port SW[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1062.137 ; gain = 309.777
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1062.137 ; gain = 309.777
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1062.137 ; gain = 309.777
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.073 . Memory (MB): peak = 1062.137 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/constrs_1/imports/constrs_1/imports/temp2/nexsys4_ddr.xdc]
+WARNING: [Vivado 12-584] No ports matched 'LED[0]'. [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/constrs_1/imports/constrs_1/imports/temp2/nexsys4_ddr.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/constrs_1/imports/constrs_1/imports/temp2/nexsys4_ddr.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[1]'. [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/constrs_1/imports/constrs_1/imports/temp2/nexsys4_ddr.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/constrs_1/imports/constrs_1/imports/temp2/nexsys4_ddr.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[2]'. [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/constrs_1/imports/constrs_1/imports/temp2/nexsys4_ddr.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/constrs_1/imports/constrs_1/imports/temp2/nexsys4_ddr.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[3]'. [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/constrs_1/imports/constrs_1/imports/temp2/nexsys4_ddr.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/constrs_1/imports/constrs_1/imports/temp2/nexsys4_ddr.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[4]'. [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/constrs_1/imports/constrs_1/imports/temp2/nexsys4_ddr.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/constrs_1/imports/constrs_1/imports/temp2/nexsys4_ddr.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[5]'. [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/constrs_1/imports/constrs_1/imports/temp2/nexsys4_ddr.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/constrs_1/imports/constrs_1/imports/temp2/nexsys4_ddr.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[6]'. [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/constrs_1/imports/constrs_1/imports/temp2/nexsys4_ddr.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/constrs_1/imports/constrs_1/imports/temp2/nexsys4_ddr.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[7]'. [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/constrs_1/imports/constrs_1/imports/temp2/nexsys4_ddr.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/constrs_1/imports/constrs_1/imports/temp2/nexsys4_ddr.xdc:41]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[8]'. [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/constrs_1/imports/constrs_1/imports/temp2/nexsys4_ddr.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/constrs_1/imports/constrs_1/imports/temp2/nexsys4_ddr.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[9]'. [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/constrs_1/imports/constrs_1/imports/temp2/nexsys4_ddr.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/constrs_1/imports/constrs_1/imports/temp2/nexsys4_ddr.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[10]'. [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/constrs_1/imports/constrs_1/imports/temp2/nexsys4_ddr.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/constrs_1/imports/constrs_1/imports/temp2/nexsys4_ddr.xdc:44]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[11]'. [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/constrs_1/imports/constrs_1/imports/temp2/nexsys4_ddr.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/constrs_1/imports/constrs_1/imports/temp2/nexsys4_ddr.xdc:45]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[12]'. [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/constrs_1/imports/constrs_1/imports/temp2/nexsys4_ddr.xdc:46]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/constrs_1/imports/constrs_1/imports/temp2/nexsys4_ddr.xdc:46]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[13]'. [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/constrs_1/imports/constrs_1/imports/temp2/nexsys4_ddr.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/constrs_1/imports/constrs_1/imports/temp2/nexsys4_ddr.xdc:47]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[14]'. [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/constrs_1/imports/constrs_1/imports/temp2/nexsys4_ddr.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/constrs_1/imports/constrs_1/imports/temp2/nexsys4_ddr.xdc:48]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'LED[15]'. [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/constrs_1/imports/constrs_1/imports/temp2/nexsys4_ddr.xdc:49]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/constrs_1/imports/constrs_1/imports/temp2/nexsys4_ddr.xdc:49]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'CPU_RESETN'. [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/constrs_1/imports/constrs_1/imports/temp2/nexsys4_ddr.xdc:82]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/constrs_1/imports/constrs_1/imports/temp2/nexsys4_ddr.xdc:82]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BTNL'. [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/constrs_1/imports/constrs_1/imports/temp2/nexsys4_ddr.xdc:86]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/constrs_1/imports/constrs_1/imports/temp2/nexsys4_ddr.xdc:86]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'BTND'. [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/constrs_1/imports/constrs_1/imports/temp2/nexsys4_ddr.xdc:88]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/constrs_1/imports/constrs_1/imports/temp2/nexsys4_ddr.xdc:88]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'UART_CTS'. [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/constrs_1/imports/constrs_1/imports/temp2/nexsys4_ddr.xdc:221]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/constrs_1/imports/constrs_1/imports/temp2/nexsys4_ddr.xdc:221]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'UART_RTS'. [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/constrs_1/imports/constrs_1/imports/temp2/nexsys4_ddr.xdc:222]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/constrs_1/imports/constrs_1/imports/temp2/nexsys4_ddr.xdc:222]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/constrs_1/imports/constrs_1/imports/temp2/nexsys4_ddr.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/constrs_1/imports/constrs_1/imports/temp2/nexsys4_ddr.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/mips_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/mips_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1184.570 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1184.570 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1184.570 ; gain = 432.211
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1184.570 ; gain = 432.211
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1184.570 ; gain = 432.211
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "MemToReg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MemWrite" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "Branch" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "ALUControl" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "ALUsrc" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "RegDst" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "RegWrite" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "stop" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "jump" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/alu.vhd:100]
+INFO: [Synth 8-802] inferred FSM for state register 'tx_pstate_reg' in module 'UART_TX'
+INFO: [Synth 8-5544] ROM "tx_data_out_sel" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'rx_pstate_reg' in module 'UART_RX'
+INFO: [Synth 8-802] inferred FSM for state register 'state_d_reg' in module 'uart_wrapper2'
+WARNING: [Synth 8-327] inferring latch for variable 'd_read_reg' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/dmem.vhd:115]
+WARNING: [Synth 8-327] inferring latch for variable 'dmem_reg[127]' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/dmem.vhd:115]
+WARNING: [Synth 8-327] inferring latch for variable 'dmem_reg[126]' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/dmem.vhd:115]
+WARNING: [Synth 8-327] inferring latch for variable 'dmem_reg[125]' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/dmem.vhd:115]
+WARNING: [Synth 8-327] inferring latch for variable 'dmem_reg[124]' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/dmem.vhd:115]
+WARNING: [Synth 8-327] inferring latch for variable 'dmem_reg[123]' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/dmem.vhd:115]
+WARNING: [Synth 8-327] inferring latch for variable 'dmem_reg[122]' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/dmem.vhd:115]
+WARNING: [Synth 8-327] inferring latch for variable 'dmem_reg[121]' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/dmem.vhd:115]
+WARNING: [Synth 8-327] inferring latch for variable 'dmem_reg[120]' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/dmem.vhd:115]
+WARNING: [Synth 8-327] inferring latch for variable 'dmem_reg[119]' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/dmem.vhd:115]
+WARNING: [Synth 8-327] inferring latch for variable 'dmem_reg[118]' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/dmem.vhd:115]
+WARNING: [Synth 8-327] inferring latch for variable 'dmem_reg[117]' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/dmem.vhd:115]
+WARNING: [Synth 8-327] inferring latch for variable 'dmem_reg[116]' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/dmem.vhd:115]
+WARNING: [Synth 8-327] inferring latch for variable 'dmem_reg[115]' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/dmem.vhd:115]
+WARNING: [Synth 8-327] inferring latch for variable 'dmem_reg[114]' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/dmem.vhd:115]
+WARNING: [Synth 8-327] inferring latch for variable 'dmem_reg[113]' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/dmem.vhd:115]
+WARNING: [Synth 8-327] inferring latch for variable 'dmem_reg[112]' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/dmem.vhd:115]
+WARNING: [Synth 8-327] inferring latch for variable 'dmem_reg[111]' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/dmem.vhd:115]
+WARNING: [Synth 8-327] inferring latch for variable 'dmem_reg[110]' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/dmem.vhd:115]
+WARNING: [Synth 8-327] inferring latch for variable 'dmem_reg[109]' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/dmem.vhd:115]
+WARNING: [Synth 8-327] inferring latch for variable 'dmem_reg[108]' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/dmem.vhd:115]
+WARNING: [Synth 8-327] inferring latch for variable 'dmem_reg[107]' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/dmem.vhd:115]
+WARNING: [Synth 8-327] inferring latch for variable 'dmem_reg[106]' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/dmem.vhd:115]
+WARNING: [Synth 8-327] inferring latch for variable 'dmem_reg[105]' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/dmem.vhd:115]
+WARNING: [Synth 8-327] inferring latch for variable 'dmem_reg[104]' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/dmem.vhd:115]
+WARNING: [Synth 8-327] inferring latch for variable 'dmem_reg[103]' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/dmem.vhd:115]
+WARNING: [Synth 8-327] inferring latch for variable 'dmem_reg[102]' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/dmem.vhd:115]
+WARNING: [Synth 8-327] inferring latch for variable 'dmem_reg[101]' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/dmem.vhd:115]
+WARNING: [Synth 8-327] inferring latch for variable 'dmem_reg[100]' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/dmem.vhd:115]
+WARNING: [Synth 8-327] inferring latch for variable 'dmem_reg[99]' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/dmem.vhd:115]
+WARNING: [Synth 8-327] inferring latch for variable 'dmem_reg[98]' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/dmem.vhd:115]
+WARNING: [Synth 8-327] inferring latch for variable 'dmem_reg[97]' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/dmem.vhd:115]
+WARNING: [Synth 8-327] inferring latch for variable 'dmem_reg[96]' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/dmem.vhd:115]
+WARNING: [Synth 8-327] inferring latch for variable 'dmem_reg[95]' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/dmem.vhd:115]
+WARNING: [Synth 8-327] inferring latch for variable 'dmem_reg[94]' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/dmem.vhd:115]
+WARNING: [Synth 8-327] inferring latch for variable 'dmem_reg[93]' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/dmem.vhd:115]
+WARNING: [Synth 8-327] inferring latch for variable 'dmem_reg[92]' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/dmem.vhd:115]
+WARNING: [Synth 8-327] inferring latch for variable 'dmem_reg[91]' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/dmem.vhd:115]
+WARNING: [Synth 8-327] inferring latch for variable 'dmem_reg[90]' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/dmem.vhd:115]
+WARNING: [Synth 8-327] inferring latch for variable 'dmem_reg[89]' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/dmem.vhd:115]
+WARNING: [Synth 8-327] inferring latch for variable 'dmem_reg[88]' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/dmem.vhd:115]
+WARNING: [Synth 8-327] inferring latch for variable 'dmem_reg[87]' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/dmem.vhd:115]
+WARNING: [Synth 8-327] inferring latch for variable 'dmem_reg[86]' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/dmem.vhd:115]
+WARNING: [Synth 8-327] inferring latch for variable 'dmem_reg[85]' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/dmem.vhd:115]
+WARNING: [Synth 8-327] inferring latch for variable 'dmem_reg[84]' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/dmem.vhd:115]
+WARNING: [Synth 8-327] inferring latch for variable 'dmem_reg[83]' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/dmem.vhd:115]
+WARNING: [Synth 8-327] inferring latch for variable 'dmem_reg[82]' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/dmem.vhd:115]
+WARNING: [Synth 8-327] inferring latch for variable 'dmem_reg[81]' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/dmem.vhd:115]
+WARNING: [Synth 8-327] inferring latch for variable 'dmem_reg[80]' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/dmem.vhd:115]
+WARNING: [Synth 8-327] inferring latch for variable 'dmem_reg[79]' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/dmem.vhd:115]
+WARNING: [Synth 8-327] inferring latch for variable 'dmem_reg[78]' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/dmem.vhd:115]
+WARNING: [Synth 8-327] inferring latch for variable 'dmem_reg[77]' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/dmem.vhd:115]
+WARNING: [Synth 8-327] inferring latch for variable 'dmem_reg[76]' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/dmem.vhd:115]
+WARNING: [Synth 8-327] inferring latch for variable 'dmem_reg[75]' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/dmem.vhd:115]
+WARNING: [Synth 8-327] inferring latch for variable 'dmem_reg[74]' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/dmem.vhd:115]
+WARNING: [Synth 8-327] inferring latch for variable 'dmem_reg[73]' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/dmem.vhd:115]
+WARNING: [Synth 8-327] inferring latch for variable 'dmem_reg[72]' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/dmem.vhd:115]
+WARNING: [Synth 8-327] inferring latch for variable 'dmem_reg[71]' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/dmem.vhd:115]
+WARNING: [Synth 8-327] inferring latch for variable 'dmem_reg[70]' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/dmem.vhd:115]
+WARNING: [Synth 8-327] inferring latch for variable 'dmem_reg[69]' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/dmem.vhd:115]
+WARNING: [Synth 8-327] inferring latch for variable 'dmem_reg[68]' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/dmem.vhd:115]
+WARNING: [Synth 8-327] inferring latch for variable 'dmem_reg[67]' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/dmem.vhd:115]
+WARNING: [Synth 8-327] inferring latch for variable 'dmem_reg[66]' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/dmem.vhd:115]
+WARNING: [Synth 8-327] inferring latch for variable 'dmem_reg[65]' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/dmem.vhd:115]
+WARNING: [Synth 8-327] inferring latch for variable 'dmem_reg[64]' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/dmem.vhd:115]
+WARNING: [Synth 8-327] inferring latch for variable 'dmem_reg[63]' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/dmem.vhd:115]
+WARNING: [Synth 8-327] inferring latch for variable 'dmem_reg[62]' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/dmem.vhd:115]
+WARNING: [Synth 8-327] inferring latch for variable 'dmem_reg[61]' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/dmem.vhd:115]
+WARNING: [Synth 8-327] inferring latch for variable 'dmem_reg[60]' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/dmem.vhd:115]
+WARNING: [Synth 8-327] inferring latch for variable 'dmem_reg[59]' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/dmem.vhd:115]
+WARNING: [Synth 8-327] inferring latch for variable 'dmem_reg[58]' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/dmem.vhd:115]
+WARNING: [Synth 8-327] inferring latch for variable 'dmem_reg[57]' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/dmem.vhd:115]
+WARNING: [Synth 8-327] inferring latch for variable 'dmem_reg[56]' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/dmem.vhd:115]
+WARNING: [Synth 8-327] inferring latch for variable 'dmem_reg[55]' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/dmem.vhd:115]
+WARNING: [Synth 8-327] inferring latch for variable 'dmem_reg[54]' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/dmem.vhd:115]
+WARNING: [Synth 8-327] inferring latch for variable 'dmem_reg[53]' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/dmem.vhd:115]
+WARNING: [Synth 8-327] inferring latch for variable 'dmem_reg[52]' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/dmem.vhd:115]
+WARNING: [Synth 8-327] inferring latch for variable 'dmem_reg[51]' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/dmem.vhd:115]
+WARNING: [Synth 8-327] inferring latch for variable 'dmem_reg[50]' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/dmem.vhd:115]
+WARNING: [Synth 8-327] inferring latch for variable 'dmem_reg[49]' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/dmem.vhd:115]
+WARNING: [Synth 8-327] inferring latch for variable 'dmem_reg[48]' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/dmem.vhd:115]
+WARNING: [Synth 8-327] inferring latch for variable 'dmem_reg[47]' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/dmem.vhd:115]
+WARNING: [Synth 8-327] inferring latch for variable 'dmem_reg[46]' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/dmem.vhd:115]
+WARNING: [Synth 8-327] inferring latch for variable 'dmem_reg[45]' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/dmem.vhd:115]
+WARNING: [Synth 8-327] inferring latch for variable 'dmem_reg[44]' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/dmem.vhd:115]
+WARNING: [Synth 8-327] inferring latch for variable 'dmem_reg[43]' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/dmem.vhd:115]
+WARNING: [Synth 8-327] inferring latch for variable 'dmem_reg[42]' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/dmem.vhd:115]
+WARNING: [Synth 8-327] inferring latch for variable 'dmem_reg[41]' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/dmem.vhd:115]
+WARNING: [Synth 8-327] inferring latch for variable 'dmem_reg[40]' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/dmem.vhd:115]
+WARNING: [Synth 8-327] inferring latch for variable 'dmem_reg[39]' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/dmem.vhd:115]
+WARNING: [Synth 8-327] inferring latch for variable 'dmem_reg[38]' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/dmem.vhd:115]
+WARNING: [Synth 8-327] inferring latch for variable 'dmem_reg[37]' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/dmem.vhd:115]
+WARNING: [Synth 8-327] inferring latch for variable 'dmem_reg[36]' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/dmem.vhd:115]
+WARNING: [Synth 8-327] inferring latch for variable 'dmem_reg[35]' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/dmem.vhd:115]
+WARNING: [Synth 8-327] inferring latch for variable 'dmem_reg[34]' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/dmem.vhd:115]
+WARNING: [Synth 8-327] inferring latch for variable 'dmem_reg[33]' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/dmem.vhd:115]
+WARNING: [Synth 8-327] inferring latch for variable 'dmem_reg[32]' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/dmem.vhd:115]
+WARNING: [Synth 8-327] inferring latch for variable 'dmem_reg[31]' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/dmem.vhd:115]
+WARNING: [Synth 8-327] inferring latch for variable 'dmem_reg[30]' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/dmem.vhd:115]
+WARNING: [Synth 8-327] inferring latch for variable 'dmem_reg[29]' [C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.srcs/sources_1/new/dmem.vhd:115]
+INFO: [Common 17-14] Message 'Synth 8-327' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                            00001 |                              000
+                  txsync |                            00010 |                              001
+                startbit |                            00100 |                              010
+                databits |                            01000 |                              011
+                 stopbit |                            10000 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'tx_pstate_reg' using encoding 'one-hot' in module 'UART_TX'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                             0001 |                              000
+                startbit |                             0010 |                              001
+                databits |                             0100 |                              010
+                 stopbit |                             1000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rx_pstate_reg' using encoding 'one-hot' in module 'UART_RX'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                               00 |                               00
+              start_task |                               01 |                               01
+           task_progress |                               10 |                               10
+                task_end |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_d_reg' using encoding 'sequential' in module 'uart_wrapper2'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:16 . Memory (MB): peak = 1184.570 ; gain = 432.211
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 4     
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 3     
+	   2 Input      3 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 3     
++---XORs : 
+	   2 Input     32 Bit         XORs := 2     
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	               32 Bit    Registers := 34    
+	               16 Bit    Registers := 2     
+	                8 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 4     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 5     
+	                1 Bit    Registers := 10    
++---Muxes : 
+	   3 Input     32 Bit        Muxes := 2     
+	   8 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 2     
+	   4 Input     32 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   5 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 7     
+	   2 Input      4 Bit        Muxes := 6     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 3     
+	   8 Input      3 Bit        Muxes := 1     
+	  11 Input      3 Bit        Muxes := 1     
+	   9 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 6     
+	   4 Input      2 Bit        Muxes := 4     
+	  11 Input      1 Bit        Muxes := 8     
+	   2 Input      1 Bit        Muxes := 48    
+	   5 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module mips_top 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               16 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   4 Input     32 Bit        Muxes := 1     
+	   3 Input     32 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+Module control_unit 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 1     
+	  11 Input      3 Bit        Muxes := 1     
+	  11 Input      1 Bit        Muxes := 8     
+Module register_file 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 32    
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 32    
+Module alu 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 2     
++---Muxes : 
+	   3 Input     32 Bit        Muxes := 1     
+	   8 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module dmem 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 7     
+Module debounce 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module UART_TX 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   5 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 6     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 1     
+Module UART_RX 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 5     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module UART 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module uart_wrapper2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 6     
+	   4 Input      2 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 5     
+Module SevenSeg_Top 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   8 Input      8 Bit        Muxes := 1     
+	   9 Input      3 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design dmem has unconnected port clk
+WARNING: [Synth 8-3331] design dmem has unconnected port rst
+WARNING: [Synth 8-3331] design imem has unconnected port pc[31]
+WARNING: [Synth 8-3331] design imem has unconnected port pc[30]
+WARNING: [Synth 8-3331] design imem has unconnected port pc[29]
+WARNING: [Synth 8-3331] design imem has unconnected port pc[28]
+WARNING: [Synth 8-3331] design imem has unconnected port pc[27]
+WARNING: [Synth 8-3331] design imem has unconnected port pc[26]
+WARNING: [Synth 8-3331] design imem has unconnected port pc[25]
+WARNING: [Synth 8-3331] design imem has unconnected port pc[24]
+WARNING: [Synth 8-3331] design imem has unconnected port pc[23]
+WARNING: [Synth 8-3331] design imem has unconnected port pc[22]
+WARNING: [Synth 8-3331] design imem has unconnected port pc[21]
+WARNING: [Synth 8-3331] design imem has unconnected port pc[20]
+WARNING: [Synth 8-3331] design imem has unconnected port pc[19]
+WARNING: [Synth 8-3331] design imem has unconnected port pc[18]
+WARNING: [Synth 8-3331] design imem has unconnected port pc[17]
+WARNING: [Synth 8-3331] design imem has unconnected port pc[16]
+WARNING: [Synth 8-3331] design imem has unconnected port pc[15]
+WARNING: [Synth 8-3331] design imem has unconnected port pc[14]
+WARNING: [Synth 8-3331] design imem has unconnected port pc[13]
+WARNING: [Synth 8-3331] design imem has unconnected port pc[12]
+WARNING: [Synth 8-3331] design imem has unconnected port pc[11]
+WARNING: [Synth 8-3331] design imem has unconnected port pc[10]
+WARNING: [Synth 8-3331] design imem has unconnected port pc[9]
+WARNING: [Synth 8-3331] design imem has unconnected port pc[8]
+WARNING: [Synth 8-3331] design mips_top has unconnected port BTNU
+WARNING: [Synth 8-3331] design mips_top has unconnected port SW[10]
+WARNING: [Synth 8-3331] design mips_top has unconnected port SW[9]
+WARNING: [Synth 8-3331] design mips_top has unconnected port SW[8]
+WARNING: [Synth 8-3331] design mips_top has unconnected port SW[7]
+WARNING: [Synth 8-3331] design mips_top has unconnected port SW[5]
+WARNING: [Synth 8-3331] design mips_top has unconnected port SW[4]
+WARNING: [Synth 8-3331] design mips_top has unconnected port SW[3]
+WARNING: [Synth 8-3331] design mips_top has unconnected port SW[2]
+WARNING: [Synth 8-3331] design mips_top has unconnected port SW[1]
+WARNING: [Synth 8-3331] design mips_top has unconnected port SW[0]
+WARNING: [Synth 8-3332] Sequential element (add_UART_reg[31]) is unused and will be removed from module mips_top.
+WARNING: [Synth 8-3332] Sequential element (add_UART_reg[30]) is unused and will be removed from module mips_top.
+WARNING: [Synth 8-3332] Sequential element (add_UART_reg[29]) is unused and will be removed from module mips_top.
+WARNING: [Synth 8-3332] Sequential element (add_UART_reg[28]) is unused and will be removed from module mips_top.
+WARNING: [Synth 8-3332] Sequential element (add_UART_reg[27]) is unused and will be removed from module mips_top.
+WARNING: [Synth 8-3332] Sequential element (add_UART_reg[26]) is unused and will be removed from module mips_top.
+WARNING: [Synth 8-3332] Sequential element (add_UART_reg[25]) is unused and will be removed from module mips_top.
+WARNING: [Synth 8-3332] Sequential element (add_UART_reg[24]) is unused and will be removed from module mips_top.
+WARNING: [Synth 8-3332] Sequential element (add_UART_reg[23]) is unused and will be removed from module mips_top.
+WARNING: [Synth 8-3332] Sequential element (add_UART_reg[22]) is unused and will be removed from module mips_top.
+WARNING: [Synth 8-3332] Sequential element (add_UART_reg[21]) is unused and will be removed from module mips_top.
+WARNING: [Synth 8-3332] Sequential element (add_UART_reg[20]) is unused and will be removed from module mips_top.
+WARNING: [Synth 8-3332] Sequential element (add_UART_reg[19]) is unused and will be removed from module mips_top.
+WARNING: [Synth 8-3332] Sequential element (add_UART_reg[18]) is unused and will be removed from module mips_top.
+WARNING: [Synth 8-3332] Sequential element (add_UART_reg[17]) is unused and will be removed from module mips_top.
+WARNING: [Synth 8-3332] Sequential element (add_UART_reg[16]) is unused and will be removed from module mips_top.
+WARNING: [Synth 8-3332] Sequential element (add_UART_reg[15]) is unused and will be removed from module mips_top.
+WARNING: [Synth 8-3332] Sequential element (add_UART_reg[14]) is unused and will be removed from module mips_top.
+WARNING: [Synth 8-3332] Sequential element (add_UART_reg[13]) is unused and will be removed from module mips_top.
+WARNING: [Synth 8-3332] Sequential element (add_UART_reg[12]) is unused and will be removed from module mips_top.
+WARNING: [Synth 8-3332] Sequential element (add_UART_reg[11]) is unused and will be removed from module mips_top.
+WARNING: [Synth 8-3332] Sequential element (add_UART_reg[10]) is unused and will be removed from module mips_top.
+WARNING: [Synth 8-3332] Sequential element (add_UART_reg[9]) is unused and will be removed from module mips_top.
+WARNING: [Synth 8-3332] Sequential element (add_UART_reg[8]) is unused and will be removed from module mips_top.
+WARNING: [Synth 8-3332] Sequential element (add_UART_reg[7]) is unused and will be removed from module mips_top.
+WARNING: [Synth 8-3332] Sequential element (add_UART_reg[6]) is unused and will be removed from module mips_top.
+WARNING: [Synth 8-3332] Sequential element (add_UART_reg[5]) is unused and will be removed from module mips_top.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:00 ; elapsed = 00:01:02 . Memory (MB): peak = 1217.992 ; gain = 465.633
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+--------------+---------------+----------------+
+|Module Name | RTL Object   | Depth x Width | Implemented As | 
++------------+--------------+---------------+----------------+
+|imem        | imem_data[0] | 256x8         | LUT            | 
+|imem        | imem_data[0] | 256x8         | LUT            | 
+|imem        | imem_data[0] | 256x8         | LUT            | 
+|imem        | imem_data[0] | 256x8         | LUT            | 
+|imem        | imem_data[0] | 256x8         | LUT            | 
+|imem        | imem_data[0] | 256x8         | LUT            | 
+|imem        | imem_data[0] | 256x8         | LUT            | 
+|imem        | imem_data[0] | 256x8         | LUT            | 
++------------+--------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:07 ; elapsed = 00:01:09 . Memory (MB): peak = 1223.781 ; gain = 471.422
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:23 ; elapsed = 00:01:25 . Memory (MB): peak = 1266.313 ; gain = 513.953
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:35 ; elapsed = 00:01:38 . Memory (MB): peak = 1267.316 ; gain = 514.957
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:39 ; elapsed = 00:01:42 . Memory (MB): peak = 1269.125 ; gain = 516.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:39 ; elapsed = 00:01:42 . Memory (MB): peak = 1269.125 ; gain = 516.766
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:40 ; elapsed = 00:01:42 . Memory (MB): peak = 1269.125 ; gain = 516.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:40 ; elapsed = 00:01:42 . Memory (MB): peak = 1269.125 ; gain = 516.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:40 ; elapsed = 00:01:42 . Memory (MB): peak = 1269.125 ; gain = 516.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:40 ; elapsed = 00:01:42 . Memory (MB): peak = 1269.125 ; gain = 516.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    48|
+|3     |LUT1   |    27|
+|4     |LUT2   |    90|
+|5     |LUT3   |   131|
+|6     |LUT4   |   230|
+|7     |LUT5   |   227|
+|8     |LUT6   |  2169|
+|9     |MUXF7  |   886|
+|10    |MUXF8  |   239|
+|11    |FDCE   |  1003|
+|12    |FDPE   |    31|
+|13    |FDRE   |   113|
+|14    |FDSE   |    27|
+|15    |LD     |  2069|
+|16    |IBUF   |     9|
+|17    |OBUF   |    16|
+|18    |OBUFT  |     1|
++------+-------+------+
+
+Report Instance Areas: 
++------+----------------+--------------+------+
+|      |Instance        |Module        |Cells |
++------+----------------+--------------+------+
+|1     |top             |              |  7317|
+|2     |  uart_wrapper  |uart_wrapper2 |   120|
+|3     |    uart        |UART          |   105|
+|4     |      uart_rx_i |UART_RX       |    36|
+|5     |      uart_tx_i |UART_TX       |    49|
+|6     |  BTNC_deb      |debounce      |    35|
+|7     |  dmem_block    |dmem          |  3040|
+|8     |  imem_block    |imem          |   978|
+|9     |  rf_block      |register_file |  2974|
+|10    |  seven_seg     |SevenSeg_Top  |    52|
++------+----------------+--------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:40 ; elapsed = 00:01:42 . Memory (MB): peak = 1269.125 ; gain = 516.766
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 194 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:32 ; elapsed = 00:01:40 . Memory (MB): peak = 1269.125 ; gain = 394.332
+Synthesis Optimization Complete : Time (s): cpu = 00:01:40 ; elapsed = 00:01:43 . Memory (MB): peak = 1269.125 ; gain = 516.766
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.077 . Memory (MB): peak = 1281.191 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 3242 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1281.191 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2069 instances were transformed.
+  LD => LDCE: 2069 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+80 Infos, 228 Warnings, 21 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:46 ; elapsed = 00:01:50 . Memory (MB): peak = 1281.191 ; gain = 831.742
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1281.191 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/milin_/Desktop/Advanced Computer Hardware Design/Mips_processorUARTAlphav2/Mips_processorUARTAlphav2.runs/synth_1/mips_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file mips_top_utilization_synth.rpt -pb mips_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Dec  2 23:44:02 2019...
